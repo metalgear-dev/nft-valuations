@@ -1,0 +1,27 @@
+<div class="status-item <%= background %> p-0 nav-padding d-inline-flex justify-content-center">    
+    <span class="label align-self-center">
+        <%= label %>
+    </span>
+    <% if(score > 0) { %>    
+        <span class="score align-self-center">
+            Ξ<%= score %>
+        </span>
+    <% } %>
+    <% if(wallets != '') { %>    
+        <span class="score align-self-center">
+            <%= wallets %>
+        </span>
+    <% } %>
+    <span class="symbol align-self-center">
+        <% if(isUp) { %>
+            <i class="bi bi-arrow-up-right color-green"></i>
+        <% } else { %>
+            <i class="bi bi-arrow-down-right color-red"></i>
+        <% } %>
+    </span>
+    <% if(cost != '') { %>
+        <span class="cost color-dark align-self-center">
+            $<%= cost %>
+        </span>
+    <% } %>
+</div>
