@@ -5,7 +5,7 @@
   "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
-    "sass": "sass --no-source-map --watch src/styles/main.sass public/css/main.css",
+    "sass": "sass --no-source-map --watch views/styles/main.sass public/css/main.css",
     "dev": "ts-node-dev src/app.ts",
     "start": "NODE_ENV=production node ./dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,6 +30,7 @@
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "fakebase": "^0.3.0",
     "sass": "^1.55.0"
   }
 }

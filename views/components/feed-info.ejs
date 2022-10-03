@@ -1,3 +1,38 @@
 <div class="info-data d-inline-block">
-    <%= info.mode %> for Ξ<%= info.score %> ($<%= info.cost %>)
+    <div class="score-data">
+        <div class="row">
+            <div class="col-md-8 col-12 my-0">
+                <span class="score">
+                    <%= info.mode %> for Ξ<%= info.score %> ($<%= info.cost %>)
+                </span>
+            </div>
+            <div class="col-md-4 col-12 d-flex justify-content-end">
+                <span class="nft-percent color-dark align-self-center">
+                    <% if(info.nftPercent >= 0) { %>
+                        <%= info.nftPercent %>% above NFTi
+                    <% } else { %>
+                        <%= -info.nftPercent %>% below NFTi
+                    <% } %>
+                </span>
+            </div>
+        </div>       
+    </div>
+    <div class="info-table">
+        <table class="w-100">
+            <thead>
+                <tr>
+                    <th class="color-dark p-0">NFTI</th>
+                    <th class="color-dark p-0">ADJ. FLOOR</th>
+                    <th class="color-dark p-0">EST. PROFIT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="color-dark p-0">Ξ<%= info.nftScore %></td>
+                    <td class="color-dark p-0">Ξ<%= info.adjFloor %></td>
+                    <td class="color-<%= info.status %> p-0">Ξ<%= info.estProfit %></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

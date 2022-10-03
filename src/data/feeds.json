@@ -1,0 +1,121 @@
+[
+  {
+    "user": {
+      "name": "hodlponkz.eth",
+      "avatars": [
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png"                          
+      ],
+      "ago": "5 minutes ago"
+    },
+    "info": {
+      "mode": "bought",
+      "score": 245.2,
+      "cost": 442102,
+      "nftPercent": -310,
+      "nftScore": 760.12,
+      "adjFloor": 720.42,
+      "estProfit": 514.92,
+      "status": "green"
+    }
+  },
+  {
+    "user": {
+      "name": "hodlponkz.eth",
+      "avatars": [
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png"                          
+      ],
+      "ago": "15 minutes ago"
+    },
+    "info": {
+      "mode": "sold",
+      "score": 245.2,
+      "cost": 442102,
+      "nftPercent": 310,
+      "nftScore": 760.12,
+      "adjFloor": 720.42,
+      "estProfit": 122.5,
+      "status": "red"
+    }
+  },
+  {
+    "user": {
+      "name": "hodlponkz.eth",
+      "avatars": [
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png"                      
+      ],
+      "ago": "20 minutes ago"
+    },
+    "info": {
+      "mode": "listed",
+      "score": 245.2,
+      "cost": 442102,
+      "nftPercent": -310,
+      "nftScore": 760.12,
+      "adjFloor": 720.42,
+      "estProfit":248.2,
+      "status": "green"
+    }
+  },
+  {
+    "user": {
+      "name": "hodlponkz.eth",
+      "avatars": [
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png"                    
+      ],
+      "ago": "1 hour ago"
+    },
+    "info": {
+      "mode": "listed",
+      "score": 245.2,
+      "cost": 442102,
+      "nftPercent": -310,
+      "nftScore": 760.12,
+      "adjFloor": 720.42,
+      "estProfit": 382.4,
+      "status": "green"
+    }
+  },
+  {
+    "user": {
+      "name": "hodlponkz.eth",
+      "avatars": [
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png",
+        "./images/users/Punk6529.png"                    
+      ],
+      "ago": "1 hour ago"
+    },
+    "info": {
+      "mode": "listed",
+      "score": 245.2,
+      "cost": 442102,
+      "nftPercent": -310,
+      "nftScore": 760.12,
+      "adjFloor": 720.42,
+      "estProfit": 382.4,
+      "status": "green"
+    }
+  }
+]

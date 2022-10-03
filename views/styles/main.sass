@@ -4,6 +4,7 @@ $bg-color-dark: #09090A
 $bg-color-dark-1: #17161C
 $bg-color-dark-2: #1A1A22
 $bg-color-dark-3: #1D1D26
+$bg-color-dark-4: #282836
 
 // font color
 $font-color-white: #FFFFFF
@@ -12,19 +13,10 @@ $font-color-purple: #9452F7
 $font-color-green: #3CD660
 $font-color-red: #BE3D2C
 $font-color-bright: #F2F2F5
+$font-color-blue: #1FA8D1
 
 // paddings
 $nav-padding: 25px
-
-body
-    font-family: Inter
-    background-color: $bg-color
-    *
-        color: $font-color-white
-
-@import 'index/navbar'
-@import 'index/status-bar'
-@import 'index/content'
 
 .color-green
     color: $font-color-green !important
@@ -41,9 +33,22 @@ body
 .color-bright
     color: $font-color-bright !important
 
+.color-blue
+    color: $font-color-blue !important
+
 .nav-padding
     padding-left: $nav-padding !important
     padding-right: $nav-padding !important
+
+body
+    font-family: Inter
+    background-color: $bg-color
+    *
+        color: $font-color-white
+
+@import 'index/navbar'
+@import 'index/status-bar'
+@import 'index/content'
 
 @media (min-width: 1600px)
     .container

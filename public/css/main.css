@@ -1,3 +1,32 @@
+.color-green {
+  color: #3CD660 !important;
+}
+
+.color-dark {
+  color: #79798C !important;
+}
+
+.color-red {
+  color: #BE3D2C !important;
+}
+
+.color-purple {
+  color: #9452F7 !important;
+}
+
+.color-bright {
+  color: #F2F2F5 !important;
+}
+
+.color-blue {
+  color: #1FA8D1 !important;
+}
+
+.nav-padding {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
 body {
   font-family: Inter;
   background-color: #1E1E1E;
@@ -97,6 +126,7 @@ nav .more-btn {
   padding-top: 30px;
   padding-left: 75px;
   padding-right: 75px;
+  padding-bottom: 73px;
   background-color: #09090A;
 }
 .content .feed-data {
@@ -113,86 +143,174 @@ nav .more-btn {
   line-height: 24px;
   font-color: #F2F2F5;
   padding-top: 26px;
+  padding-bottom: 25px;
 }
 .content .feed-data .feed-list {
-  padding-top: 25px;
+  height: 565px;
+  overflow: scroll;
 }
-.content .feed-data .feed-list .user-data {
+.content .feed-data .feed-list::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.content .feed-data .feed-list .feed-item {
+  margin-bottom: 8px;
+}
+.content .feed-data .feed-list .feed-item .user-data {
   padding: 15px 20px 18px 17.5px;
   width: 309px;
   margin-right: 1px;
   background-color: #1D1D26;
 }
-.content .feed-data .feed-list .user-data .user-name {
+.content .feed-data .feed-list .feed-item .user-data .user-name {
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   margin-bottom: 7px;
 }
-.content .feed-data .feed-list .user-data .user-time {
+.content .feed-data .feed-list .feed-item .user-data .user-time {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
 }
-.content .feed-data .feed-list .user-data .avatars {
+.content .feed-data .feed-list .feed-item .user-data .avatars {
   margin-top: 17px;
 }
-.content .feed-data .feed-list .user-data .avatars .user-avatar {
+.content .feed-data .feed-list .feed-item .user-data .avatars .user-avatar {
   width: 30px;
   height: 30px;
   object-fit: cover;
 }
-.content .feed-data .feed-list .user-data .button {
+.content .feed-data .feed-list .feed-item .user-data .button {
   width: 36px;
   height: 40px;
 }
-.content .feed-data .feed-list .user-data .button.create-some {
+.content .feed-data .feed-list .feed-item .user-data .button.create-some {
   background-color: #282836;
 }
-.content .feed-data .feed-list .user-data .button.create-some .bi-plus {
+.content .feed-data .feed-list .feed-item .user-data .button.create-some .bi-plus {
   font-size: 28px;
 }
-.content .feed-data .feed-list .user-data .button.drop-down {
+.content .feed-data .feed-list .feed-item .user-data .button.drop-down {
   background-color: #353547;
 }
-.content .feed-data .feed-list .user-data .button.drop-down .bi-chevron-down {
+.content .feed-data .feed-list .feed-item .user-data .button.drop-down .bi-chevron-down {
   font-size: 12px;
 }
-.content .feed-data .feed-list .info-data {
-  padding: 20px 21px 17px 20px;
+.content .feed-data .feed-list .feed-item .info-data {
+  padding: 20px 20px 17px 0;
   width: 499px;
   background-color: #1D1D26;
+}
+.content .feed-data .feed-list .feed-item .info-data .score-data {
+  padding-left: 21px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #17161C;
+  height: 35px;
+}
+.content .feed-data .feed-list .feed-item .info-data .score-data .score {
+  font-size: 15px;
+  font-weight: 500;
+}
+.content .feed-data .feed-list .feed-item .info-data .score-data .nft-percent {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+.content .feed-data .feed-list .feed-item .info-data .info-table {
+  padding-left: 21px;
+  padding-top: 7px;
+}
+.content .feed-data .feed-list .feed-item .info-data .info-table table {
+  height: 41px;
+}
+.content .feed-data .feed-list .feed-item .info-data .info-table table tbody::before {
+  content: "";
+  display: block;
+  height: 8px;
+}
+.content .feed-data .feed-list .feed-item .info-data .info-table table tbody td {
+  font-size: 15px;
+  line-height: 18px;
+}
+.content .feed-data .feed-list .feed-item .info-data .info-table table tbody td:last-child {
+  text-align: right;
+  font-weight: 700;
+}
+.content .feed-data .feed-list .feed-item .info-data .info-table table th {
+  font-size: 12px;
+  line-height: 15px;
+}
+.content .feed-data .feed-list .feed-item .info-data .info-table table th:first-child {
+  width: 140px;
+}
+.content .feed-data .feed-list .feed-item .info-data .info-table table th:last-child {
+  text-align: right;
 }
 .content .bar-data {
   background-color: #17161C;
   width: 410px;
+  height: 640px;
 }
-
-.color-green {
-  color: #3CD660 !important;
+.content .bar-data .tab-menu {
+  height: 55px;
+  padding: 12px 20px;
+  background-color: #1D1D26;
 }
-
-.color-dark {
-  color: #79798C !important;
+.content .bar-data .tab-menu .tab-btn {
+  padding: 8px 20px;
+  background-color: #17161C;
+  border-radius: 31px;
+  border: none;
+  height: 31px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
 }
-
-.color-red {
-  color: #BE3D2C !important;
+.content .bar-data .tab-menu .tab-btn.more-btn {
+  width: 31px;
+  border-radius: 50%;
+  padding: 8px 10px;
 }
-
-.color-purple {
-  color: #9452F7 !important;
+.content .bar-data .tab-menu .tab-btn.active {
+  color: #17161C !important;
+  background-color: #F2F2F5;
 }
-
-.color-bright {
-  color: #F2F2F5 !important;
+.content .bar-data .bar-info {
+  padding: 21px;
 }
-
-.nav-padding {
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+.content .bar-data .bar-info .title {
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
+.content .bar-data .bar-info .title span {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.content .bar-data .bar-info .bar-list .bar-item {
+  padding-top: 33px;
+}
+.content .bar-data .bar-info .bar-list .bar-item .row {
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 18px;
+}
+.content .bar-data .bar-info .bar-list .bar-item .row .score-label {
+  font-weight: 500;
+}
+.content .bar-data .bar-info .bar-list .bar-item .row .score-value {
+  font-weight: 700;
+}
+.content .bar-data .bar-info .bar-list .bar-item .progress {
+  background-color: #282836;
+}
+.content .bar-data .bar-info .bar-list .bar-item .progress .progress-bar {
+  background-color: #1FA8D1;
 }
 
 @media (min-width: 1600px) {

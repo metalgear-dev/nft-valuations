@@ -1,0 +1,164 @@
+.content
+    padding-top: 30px
+    padding-left: 75px
+    padding-right: 75px
+    padding-bottom: 73px
+    background-color: $bg-color-dark
+    .feed-data
+        background-color: $bg-color-dark-1
+        margin-right: 30px
+        width: 850px
+        padding: 0 21px
+
+        h3
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 700
+            font-size: 20px
+            line-height: 24px
+            font-color: $font-color-bright
+            padding-top: 26px
+            padding-bottom: 25px
+
+        .feed-list
+            height: 565px
+            overflow: scroll
+
+            &::-webkit-scrollbar
+                display: none
+                -ms-overflow-style: none
+                scrollbar-width: none
+
+            .feed-item
+                margin-bottom: 8px
+                .user-data
+                    padding: 15px 20px 18px 17.5px
+                    width: 309px
+                    margin-right: 1px
+                    background-color: $bg-color-dark-3
+
+                    .user-name
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 15px
+                        line-height: 18px
+                        margin-bottom: 7px
+
+                    .user-time
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 12px
+                        line-height: 15px
+
+                    .avatars
+                        margin-top: 17px
+                        .user-avatar
+                            width: 30px
+                            height: 30px
+                            object-fit: cover
+
+                    .button
+                        width: 36px
+                        height: 40px
+                        &.create-some
+                            background-color: $bg-color-dark-4
+                            .bi-plus
+                                font-size: 28px
+                        &.drop-down
+                            background-color: #353547
+                            .bi-chevron-down
+                                font-size: 12px
+
+                .info-data
+                    padding: 20px 20px 17px 0
+                    width: 499px
+                    background-color: $bg-color-dark-3
+                    .score-data
+                        padding-left: 21px
+                        padding-bottom: 17px
+                        border-bottom: 1px solid $bg-color-dark-1
+                        height: 35px
+                        .score
+                            font-size: 15px
+                            font-weight: 500
+                        .nft-percent
+                            font-style: normal
+                            font-weight: 500
+                            font-size: 12px
+                            line-height: 15px
+                    .info-table
+                        padding-left: 21px
+                        padding-top: 7px
+                        table
+                            height: 41px
+                            tbody
+                                &::before
+                                    content: '',
+                                    display: block
+                                    height: 8px
+                                td
+                                    font-size: 15px
+                                    line-height: 18px
+                                    &:last-child
+                                        text-align: right
+                                        font-weight: 700
+                            th
+                                font-size: 12px
+                                line-height: 15px
+                                &:first-child
+                                    width: 140px
+                                &:last-child
+                                    text-align: right
+
+    .bar-data
+        background-color: $bg-color-dark-1
+        width: 410px
+        height: 640px
+
+        .tab-menu
+            height: 55px
+            padding: 12px 20px
+            background-color: $bg-color-dark-3
+            .tab-btn
+                padding: 8px 20px
+                background-color: $bg-color-dark-1
+                border-radius: 31px
+                border: none
+                height: 31px
+                font-weight: 600
+                font-size: 12px
+                line-height: 15px
+                &.more-btn
+                    width: 31px
+                    border-radius: 50%
+                    padding: 8px 10px
+                &.active
+                    color: $bg-color-dark-1 !important
+                    background-color: $font-color-bright
+
+        .bar-info
+            padding: 21px
+            .title
+                padding-top: 8px
+                padding-bottom: 7px
+                span
+                    font-weight: 700
+                    font-size: 15px
+                    line-height: 18px
+
+            .bar-list
+                .bar-item
+                    padding-top: 33px
+                    .row
+                        margin-bottom: 16px
+                        font-size: 15px
+                        line-height: 18px
+                        .score-label
+                            font-weight: 500
+                        .score-value
+                            font-weight: 700
+
+                    .progress
+                        background-color: $bg-color-dark-4
+                        .progress-bar
+                            background-color: $font-color-blue

@@ -14,32 +14,8 @@
     <main>
         <%- include('../partials/status-bar'); %>
         <div class="content d-flex align-items-center">
-            <%- include('../partials/feed-data', { "feedData": [
-                {
-                    "user": {
-                        "name": "hodlponkz.eth",
-                        "avatars": [
-                            "./images/users/Punk6529.png",
-                            "./images/users/Punk6529.png",
-                            "./images/users/Punk6529.png",
-                            "./images/users/Punk6529.png",
-                            "./images/users/Punk6529.png"                            
-                        ],
-                        "ago": 5
-                    },
-                    "info": {
-                        "mode": "bought",
-                        "score": 245.2,
-                        "cost": 442102,
-                        "nftPercent": 310,
-                        "nftScore": 760.12,
-                        "adjFloor": 720.42,
-                        "estProfit": 514.92,
-                        "status": "green"
-                    }
-                }
-            ]}); %>
-            <%- include('../partials/bar-data'); %>
+            <%- include('../partials/feed-data', { feedData }); %>
+            <%- include('../partials/bar-data', { barData }); %>
         </div>
     </main>
 

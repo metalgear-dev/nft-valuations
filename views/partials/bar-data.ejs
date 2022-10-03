@@ -1,3 +1,39 @@
 <div class="bar-data d-inline-block">
-    dssdf
+    <div class="tab-menu">
+        <button class="tab-btn color-dark">
+            All
+        </button>
+        <button class="tab-btn color-dark active">
+            Whale
+        </button>
+        <button class="tab-btn color-dark">
+            New
+        </button>
+        <button class="tab-btn more-btn color-dark">
+            <i class="fa fa-ellipsis-h color-dark"></i>
+        </button>
+    </div>
+    <div class="bar-info">
+        <div class="title">
+            <span class="p-0">
+                <%= barData.whales.total %> whales
+            </span>
+        </div>
+        <div class="bar-list w-100">
+            <%- include('../components/bar', {
+                label:'Est. Profit', score: barData.whales.estProfit, percent: barData.whales.estProfitPercent }); %>
+            <%- include('../components/bar', {
+                label:'Est. Loss', score: barData.whales.estLoss, percent: barData.whales.estLossPercent }); %>
+            <%- include('../components/bar', {
+                label:'Gas Fees', score: barData.whales.gasFees, percent: barData.whales.gasFeesPercent }); %>
+            <%- include('../components/bar', {
+                label:'Bought', score: barData.whales.bought, percent: barData.whales.boughtPercent }); %>
+            <%- include('../components/bar', {
+                label:'Sold', score: barData.whales.sold, percent: barData.whales.soldPercent }); %>
+            <%- include('../components/bar', {
+                label:'Transferred', score: barData.whales.transferred, percent: barData.whales.transferredPercent }); %>
+            <%- include('../components/bar', {
+                label:'Listed', score: barData.whales.listed, percent: barData.whales.listedPercent }); %>
+        </div>
+    </div>
 </div>
