@@ -1,0 +1,28 @@
+<div class="user-data d-inline-block">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div class="user-name">
+                <%= user.name %>
+            </div>
+            <div class="user-time color-dark">
+                <%= user.ago %> minutes ago
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="d-flex justify-content-end">
+                <a class="button create-some d-flex justify-content-center">
+                    <i class="bi bi-plus align-self-center color-purple"></i>
+                </a>
+                <a class="button drop-down d-flex justify-content-center">
+                    <i class="bi bi-chevron-down align-self-center color-bright"></i>
+                </a>
+            </div>
+        </div>        
+    </div>
+    <div class="avatars">
+        <% for (let i=0; i<user.avatars.length; i++) { %>
+            <img class="user-avatar d-inline" src="<%= user.avatars[i] %>">
+        <% } %>
+    </div>
+
+</div>

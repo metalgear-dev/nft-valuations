@@ -3,13 +3,15 @@ $bg-color: #1E1E1E
 $bg-color-dark: #09090A
 $bg-color-dark-1: #17161C
 $bg-color-dark-2: #1A1A22
+$bg-color-dark-3: #1D1D26
 
 // font color
-$font-color-bright: #FFFFFF
+$font-color-white: #FFFFFF
 $font-color-dark: #79798C
 $font-color-purple: #9452F7
 $font-color-green: #3CD660
 $font-color-red: #BE3D2C
+$font-color-bright: #F2F2F5
 
 // paddings
 $nav-padding: 25px
@@ -18,71 +20,11 @@ body
     font-family: Inter
     background-color: $bg-color
     *
-        color: $font-color-bright
+        color: $font-color-white
 
-nav
-    height: 99px
-    background-color: $bg-color-dark
-
-    *
-        color: $font-color-bright !important
-
-    .navbar-brand
-        position: absolute
-        width: 151px
-        height: 39px
-        left: 25px
-        top: 30px
-
-        color: $font-color-bright
-        font-weight: 700
-        font-size: 32px
-        line-height: 39px
-        font-style: normal
-        &:hover
-            color: $font-color-dark
-
-    .navbar-nav
-        .nav-item
-            &.active
-                border-bottom: 4px solid $font-color-purple
-            .nav-link
-                font-weight: 500
-                font-size: 16px
-                line-height: 19px
-
-    .more-btn
-        position: absolute
-        width: 42px
-        height: 42px
-        right: 25px
-        top: 19px
-        background-color: $bg-color-dark-1
-        border-radius: 50%
-
-.nav-padding
-    padding-left: $nav-padding !important
-    padding-right: $nav-padding !important
-
-.status-bar
-    background-color: $bg-color-dark-1
-    overflow: hidden    
-    .status-item
-        flex-shrink: 0
-        width: fit-content
-        padding: 0 25px
-        height: 58px
-        margin-right: 40px
-        span
-            font-size: 15px
-        &.odd
-            background-color: $bg-color-dark-2
-        &.even
-            background-color: $bg-color-dark-1
-        .label
-            margin-right: 20px
-        .score, .symbol
-            margin-right: 10px
+@import 'index/navbar'
+@import 'index/status-bar'
+@import 'index/content'
 
 .color-green
     color: $font-color-green !important
@@ -93,20 +35,16 @@ nav
 .color-red
     color: $font-color-red !important
 
-@media (min-width: 992px)
-    nav .navbar-nav
-        margin-left: 400px
+.color-purple
+    color: $font-color-purple !important
 
-@media (min-width: 1200px)
-    nav .navbar-nav
-        margin-left: 655px
+.color-bright
+    color: $font-color-bright !important
 
-@media (min-width: 1400px)
-    nav .navbar-nav
-        margin-left: 855px
+.nav-padding
+    padding-left: $nav-padding !important
+    padding-right: $nav-padding !important
 
 @media (min-width: 1600px)
     .container
         max-width: 1440px
-    nav .navbar-nav
-        margin-left: 1055px

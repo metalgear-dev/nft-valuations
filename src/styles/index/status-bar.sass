@@ -1,0 +1,19 @@
+.status-bar
+    background-color: $bg-color-dark-1
+    overflow: hidden    
+    .status-item
+        flex-shrink: 0
+        width: fit-content
+        padding: 0 25px
+        height: 58px
+        margin-right: 40px
+        span
+            font-size: 15px
+        &.odd
+            background-color: $bg-color-dark-2
+        &.even
+            background-color: $bg-color-dark-1
+        .label
+            margin-right: 20px
+        .score, .symbol
+            margin-right: 10px

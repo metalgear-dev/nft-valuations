@@ -46,11 +46,26 @@ nav .more-btn {
   border-radius: 50%;
 }
 
-.nav-padding {
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+@media (min-width: 992px) {
+  nav .navbar-nav {
+    margin-left: 400px;
+  }
 }
-
+@media (min-width: 1200px) {
+  nav .navbar-nav {
+    margin-left: 655px;
+  }
+}
+@media (min-width: 1400px) {
+  nav .navbar-nav {
+    margin-left: 855px;
+  }
+}
+@media (min-width: 1600px) {
+  nav .navbar-nav {
+    margin-left: 1055px;
+  }
+}
 .status-bar {
   background-color: #17161C;
   overflow: hidden;
@@ -78,6 +93,83 @@ nav .more-btn {
   margin-right: 10px;
 }
 
+.content {
+  padding-top: 30px;
+  padding-left: 75px;
+  padding-right: 75px;
+  background-color: #09090A;
+}
+.content .feed-data {
+  background-color: #17161C;
+  margin-right: 30px;
+  width: 850px;
+  padding: 0 21px;
+}
+.content .feed-data h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  font-color: #F2F2F5;
+  padding-top: 26px;
+}
+.content .feed-data .feed-list {
+  padding-top: 25px;
+}
+.content .feed-data .feed-list .user-data {
+  padding: 15px 20px 18px 17.5px;
+  width: 309px;
+  margin-right: 1px;
+  background-color: #1D1D26;
+}
+.content .feed-data .feed-list .user-data .user-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 7px;
+}
+.content .feed-data .feed-list .user-data .user-time {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+.content .feed-data .feed-list .user-data .avatars {
+  margin-top: 17px;
+}
+.content .feed-data .feed-list .user-data .avatars .user-avatar {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.content .feed-data .feed-list .user-data .button {
+  width: 36px;
+  height: 40px;
+}
+.content .feed-data .feed-list .user-data .button.create-some {
+  background-color: #282836;
+}
+.content .feed-data .feed-list .user-data .button.create-some .bi-plus {
+  font-size: 28px;
+}
+.content .feed-data .feed-list .user-data .button.drop-down {
+  background-color: #353547;
+}
+.content .feed-data .feed-list .user-data .button.drop-down .bi-chevron-down {
+  font-size: 12px;
+}
+.content .feed-data .feed-list .info-data {
+  padding: 20px 21px 17px 20px;
+  width: 499px;
+  background-color: #1D1D26;
+}
+.content .bar-data {
+  background-color: #17161C;
+  width: 410px;
+}
+
 .color-green {
   color: #3CD660 !important;
 }
@@ -90,26 +182,21 @@ nav .more-btn {
   color: #BE3D2C !important;
 }
 
-@media (min-width: 992px) {
-  nav .navbar-nav {
-    margin-left: 400px;
-  }
+.color-purple {
+  color: #9452F7 !important;
 }
-@media (min-width: 1200px) {
-  nav .navbar-nav {
-    margin-left: 655px;
-  }
+
+.color-bright {
+  color: #F2F2F5 !important;
 }
-@media (min-width: 1400px) {
-  nav .navbar-nav {
-    margin-left: 855px;
-  }
+
+.nav-padding {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
 }
+
 @media (min-width: 1600px) {
   .container {
     max-width: 1440px;
-  }
-  nav .navbar-nav {
-    margin-left: 1055px;
   }
 }

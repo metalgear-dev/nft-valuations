@@ -1,0 +1,13 @@
+<div class="feed-data d-inline-block">
+    <h3 class="title m-0">
+        24-Hour Feed
+    </h3>
+    <div class="feed-list">
+        <% for (let i=0; i<feedData.length; i++) { %>
+            <div class="feed-item d-flex align-items-center">
+                <%- include('../components/feed-user', { user: feedData[i].user }); %>
+                <%- include('../components/feed-info', { info: feedData[i].info }); %>
+            </div>
+        <% } %>
+    </div>
+</div>
